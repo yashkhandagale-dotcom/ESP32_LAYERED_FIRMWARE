@@ -1,0 +1,5 @@
+{
+  "device_name": "plc-001",
+  "ota_password": "factory2024",
+  "wifi_ap_name": "ESP32-Setup"
+}
