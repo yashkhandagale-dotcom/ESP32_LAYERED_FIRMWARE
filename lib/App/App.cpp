@@ -165,8 +165,8 @@ void sendOpcData(float voltage, float temperature){
     StaticJsonDocument<256> doc;
     doc["deviceId"]="ESP32_01";
     doc["timestamp"]=millis();
-    doc["voltage"]=voltage;
-    doc["temperature"]=temperature;
+    doc["ns=2;s=Plant=MUMBAI_PLANT/Line=ASSEMBLY_01/Machine=CNC_02/Signal=VOLTAGE"]=voltage;
+    doc["ns=2;s=Plant=MUMBAI_PLANT/Line=ASSEMBLY_01/Machine=CNC_02/Signal=TEMP"]=temperature;
 
     char buf[256];
     size_t len = serializeJson(doc, buf);
