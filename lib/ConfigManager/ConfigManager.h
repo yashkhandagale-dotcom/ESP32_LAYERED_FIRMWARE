@@ -12,7 +12,7 @@ public:
   String getWifiApName();
 
 private:
-  String _deviceName  = "esp32-device";  
-  String _otaPassword = "admin123";
+  String _deviceName  = "plc-001";  
+  String _otaPassword = "factory2024";
   String _wifiApName  = "ESP32-Setup";
 };
